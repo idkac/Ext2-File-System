@@ -384,7 +384,7 @@ void write_inode_table(int fd) {
 	root_directory_node.i_links_count = 3;
 	root_directory_node.i_blocks = 2;
 	root_directory_node.i_block[0] = ROOT_DIR_BLOCKNO;
-	write_inode(fd, EXT2_ROOT_INO, &root_directory_inode);
+	write_inode(fd, EXT2_ROOT_INO, &root_directory_node);
 
 	struct ext2_inode hello_world = {0};
 	hello_world.i_mode = EXT2_S_IFREG
