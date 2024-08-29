@@ -33,7 +33,7 @@ typedef int32_t i32;
 #define ROOT_DIR_BLOCKNO               21
 #define LOST_AND_FOUND_DIR_BLOCKNO     22
 #define HELLO_WORLD_FILE_BLOCKNO       23
-#define LAST_BLOCK                     HELLO_WORLD_FILE_BLOCKNO
+#define LAST_BLOCK                     23
 
 #define NUM_FREE_BLOCKS (NUM_BLOCKS - LAST_BLOCK - 1)
 #define NUM_FREE_INODES (NUM_INODES - LAST_INO)
